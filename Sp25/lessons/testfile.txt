@@ -15,7 +15,8 @@
     "- <a href=#bookmark4>4. Lists.</a> \n",
     "- <a href=#bookmark5>5. Tuples.</a> \n",
     "- <a href=#bookmark6>6. Dictionaries.</a> \n",
-    "- <a href=#bookmark7>7. Packages, dataframes, and pandas.</a> "
+    "- <a href=#bookmark7>7. Packages, dataframes, and pandas.</a> \n",
+    "- <a href=#bookmark8>8. Knowledge Check</a> "
    ]
   },
   {
@@ -341,21 +342,9 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 1,
+   "execution_count": null,
    "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "Other types of variables can be interpolated as strings like here: 42, and here: 3.14159265.\n",
-      "\n",
-      "To get 2 decimal places write 3.14, or to get 2 decimal places padded\n",
-      "to a total width of 5 characters, write 03.14 (notice that the '.' counts as a character).\n",
-      "To write seven characters, you can write: 0003.14. \n"
-     ]
-    }
-   ],
+   "outputs": [],
    "source": [
     "myint = 42\n",
     "myfloat = 3.14159265\n",
@@ -380,25 +369,11 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 2,
+   "execution_count": null,
    "metadata": {
     "scrolled": true
    },
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "pi is 3.142857142857143 or 22/7\n",
-      "\n",
-      "For 2 decimal places, write 3.14.\n",
-      "For 2 decimal places padded to a total width of 5 digits, write   3.14 \n",
-      "    Notice that I have to include the space if I want to pad with spaces.\n",
-      "The spaces can be replaced with zeros this way: 003.14.\n",
-      "Or you could even do this: XX3.14\n"
-     ]
-    }
-   ],
+   "outputs": [],
    "source": [
     "num = 22\n",
     "den = 7\n",
@@ -412,17 +387,6 @@
     "Or you could even do this: {pi:X>6.2f}'''\n",
     "print (string1)\n",
     "print (string2)"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "## Knowledge Check 1: Strings\n",
-    "1. Create a string variable named `a` with the value \"The New York Times\". Then, concatenate \"is an American newspaper based in New York City\" to the variable `a`. Do so using three different options.\n",
-    "      - Option 1: use + operator\n",
-    "      - Option 2: string formatting\n",
-    "      - Option 3: f string"
    ]
   },
   {
@@ -909,53 +873,6 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "## Knowledge Check 2. Lists\n",
-    "Below is a list of all the unique population IDs in the `SGDPinfo.txt` file. Can you answer the following?\n",
-    "\n",
-    "      - a. How many population IDs are included? \n",
-    "\n",
-    "      - b. How many populations begin with the letter 'A'?"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "mypopns=['BantuHerero', 'BantuKenya', 'BantuTswana', 'Biaka', 'Dinka', 'Esan', 'Gambian', 'Ju_hoan_North', \n",
-    "         'Khomani_San', 'Luhya', 'Luo', 'Mandenka', 'Masai', 'Mbuti', 'Mende', 'Mozabite', 'Saharawi', 'Somali', \n",
-    "         'Yoruba', 'Chane', 'Karitiana', 'Mayan', 'Mixe', 'Mixtec', 'Piapoco', 'Pima', 'Quechua', 'Surui', 'Zapotec', \n",
-    "         'Aleut', 'Altaian', 'Chukchi', 'Eskimo_Chaplin', 'Eskimo_Naukan', 'Eskimo_Sireniki', 'Even', 'Itelman', \n",
-    "         'Kyrgyz', 'Mansi', 'Mongola', 'Tlingit', 'Tubalar', 'Ulchi', 'Yakut', 'Ami', 'Atayal', 'Burmese', \n",
-    "         'Cambodian', 'Dai', 'Daur', 'Han', 'Hezhen', 'Japanese', 'Kinh', 'Korean', 'Lahu', 'Miao', 'Naxi', \n",
-    "         'Oroqen', 'She', 'Thai', 'Tu', 'Tujia', 'Uygur', 'Xibo', 'Yi', 'Australian', 'Bougainville', 'Dusun', \n",
-    "         'Hawaiian', 'Igorot', 'Maori', 'Papuan', 'Balochi', 'Bengali', 'Brahmin', 'Brahui', 'Burusho', 'Hazara', \n",
-    "         'Irula', 'Kalash', 'Kapu', 'Khonda_Dora', 'Kusunda', 'Madiga', 'Makrani', 'Mala', 'Pathan', 'Punjabi', \n",
-    "         'Relli', 'Sindhi', 'Yadava', 'Abkhasian', 'Adygei', 'Albanian', 'Armenian', 'Basque', 'BedouinB', \n",
-    "         'Bergamo', 'Bulgarian', 'Chechen', 'Czech', 'Druze', 'English', 'Estonian', 'Finnish', 'French', \n",
-    "         'Georgian', 'Greek', 'Hungarian', 'Icelandic', 'Iranian', 'Iraqi_Jew', 'Jordanian', 'Lezgin', \n",
-    "         'North_Ossetian', 'Orcadian', 'Palestinian', 'Polish', 'Russian', 'Samaritan', 'Sardinian', 'Spanish', \n",
-    "         'Tajik', 'Turkish', 'Tuscan', 'Yemenite_Jew']"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "## Add your code here.\n",
-    "\n",
-    "# A\n",
-    "\n",
-    "# B"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
     "<a href=#home>Return to Top</a> "
    ]
   },
@@ -965,7 +882,7 @@
    "source": [
     "## 5. Tuples  <a name='bookmark5' />\n",
     "\n",
-    "A tuple is essentially a list that you can not change - it is immutable. You can index them, slice them, and add them together to make new tuples but not use `sort()`, `reverse()`, delete or remove items from them. If you ever have a tuple that you want to change, you have to turn it into a list. Tuples have structure, lists have order. \n",
+    "A tuple is essentially a list that you can not change - it is immutable. You can index, slice them and add them together to make new tuples but not use `sort()`, `reverse()`, delete or remove items from them. If you ever have a tuple that you want to change, you have to turn it into a list. Tuples have structure, lists have order. \n",
     "\n",
     "Why would you want to use a tuple and not a list? Maybe you have an original dataset that you don't want modified, tuples use a little bit less memory than lists, and programs with tuples often run faster than programs with lists.\n",
     "\n",
@@ -1191,48 +1108,6 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "## Knowledge Check 3: Lists and Dictionaries\n",
-    "For each of the lines below, add comments detailing what each line in the script above is doing. Then run these commands and make sure you are correct.\n",
-    "```python\n",
-    "L = [1,2,3] + [4,5,6]\n",
-    "print (L, L[:], L[:0], L[-2], L[-2:])\n",
-    "print ()\n",
-    "\n",
-    "L.reverse()\n",
-    "print (L)\n",
-    "print ()\n",
-    "\n",
-    "L.sort()\n",
-    "print (L)\n",
-    "print ()\n",
-    "\n",
-    "idx = L.index(4)\n",
-    "print (idx)\n",
-    "print ()\n",
-    "\n",
-    "print ({'a':1, 'b':2}['b'])\n",
-    "print ()\n",
-    "\n",
-    "D = {'x':1, 'y':2, 'z':3}\n",
-    "D['w'] = 0\n",
-    "print (D['x'] + D['w'])\n",
-    "print (D.keys(), D.values(), 'z' in D)\n",
-    "```"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "# Add your code here"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
     "# Summary So Far...\n",
     "\n",
     "__Lists are:__\n",
@@ -1280,10 +1155,7 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "## 7. Packages, dataframes, and pandas.  <a name='bookmark7' />\n",
-    "\n",
-    "**Until we figure out a package dependency thing - to do this section, just make sure you are using the qgis kernel.**\n",
-    "**This means, in the top ribbon, under the box that says 'Trusted', if it says 'Python 3', click on that, and select 'qgis' from the dropdown.**\n"
+    "## 7. Packages, dataframes, and pandas.  <a name='bookmark7' />"
    ]
   },
   {
@@ -1394,8 +1266,6 @@
    "metadata": {},
    "outputs": [],
    "source": [
-    "dict1 = {'column1':[1,2,4,8,16,32]}\n",
-    "dict2 = {'Numbers':[1,2,3,4],'Fruit':['apples','bananas','oranges','lemons'],'Randoms':[16.0,12.0,23.7,18.2]}\n",
     "df1 = pd.DataFrame(data=dict1) # we already imported pandas a bit earlier using import pandas as pd, so we don't need to do it again\n",
     "print(df1)"
    ]
@@ -1548,7 +1418,7 @@
     "excel_data = pd.read_excel(excel_file)\n",
     "csv_data = pd.read_csv(csv_file, sep=',') \n",
     "txt_data = pd.read_csv(txt_file,sep=',')\n",
-    "# the sep=',' argument refers to the separator between data, meaning that values in the file are separated by \",\".\n"
+    "# the sep=',' argument refers to the separator between data, meaning that values in the file are separated by \",\"."
    ]
   },
   {
@@ -2083,9 +1953,113 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "## Knowledge Check 4. Pandas, Sorting, Indexing, and Selecting. \n",
+    "# 8. Knowledge Check <a name='bookmark8' />\n",
     "\n",
-    "Below is a code that has been adjusted from the <a href=#knowledgecheck3>'Sorting, indexing, and subselecting data' subsection</a>. Add one simple line of code below to remove negative liquid precip from df2 (from the \"Precip (mm)\" column), and work through understanding the rest of the code."
+    "1. Create a string variable named `a` with the value \"The New York Times\". Then, concatenate \"is an American newspaper based in New York City\" to the variable `a`. Do so using three different options.\n",
+    "      - Option 1: use + operator\n",
+    "      - Option 2: string formatting\n",
+    "      - Option 3: f string"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "2. For each of the lines below, add comments detailing what each line in the script above is doing. Then run these commands and make sure you are correct. \n",
+    "    ```python\n",
+    "    L = [1,2,3] + [4,5,6]\n",
+    "    print (L, L[:], L[:0], L[-2], L[-2:])\n",
+    "    print ()\n",
+    "\n",
+    "    L.reverse()\n",
+    "    print (L)\n",
+    "    print ()\n",
+    "\n",
+    "    L.sort()\n",
+    "    print (L)\n",
+    "    print ()\n",
+    "\n",
+    "    idx = L.index(4)\n",
+    "    print (idx)\n",
+    "    print ()\n",
+    "\n",
+    "    print ({'a':1, 'b':2}['b'])\n",
+    "    print ()\n",
+    "\n",
+    "    D = {'x':1, 'y':2, 'z':3}\n",
+    "    D['w'] = 0\n",
+    "    print (D['x'] + D['w'])\n",
+    "    print (D.keys(), D.values(), 'z' in D)\n",
+    "    ```"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "3. Below, I include a list of all the unique population IDs in the `SGDPinfo.txt` file. Can you answer the following?\n",
+    "\n",
+    "      - a. How many population IDs are included? \n",
+    "\n",
+    "      - b. How many populations begin with the letter 'A'?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<built-in method sort of list object at 0x14d1b806d800>\n"
+     ]
+    }
+   ],
+   "source": [
+    "mypopns=['BantuHerero', 'BantuKenya', 'BantuTswana', 'Biaka', 'Dinka', 'Esan', 'Gambian', 'Ju_hoan_North', \n",
+    "         'Khomani_San', 'Luhya', 'Luo', 'Mandenka', 'Masai', 'Mbuti', 'Mende', 'Mozabite', 'Saharawi', 'Somali', \n",
+    "         'Yoruba', 'Chane', 'Karitiana', 'Mayan', 'Mixe', 'Mixtec', 'Piapoco', 'Pima', 'Quechua', 'Surui', 'Zapotec', \n",
+    "         'Aleut', 'Altaian', 'Chukchi', 'Eskimo_Chaplin', 'Eskimo_Naukan', 'Eskimo_Sireniki', 'Even', 'Itelman', \n",
+    "         'Kyrgyz', 'Mansi', 'Mongola', 'Tlingit', 'Tubalar', 'Ulchi', 'Yakut', 'Ami', 'Atayal', 'Burmese', \n",
+    "         'Cambodian', 'Dai', 'Daur', 'Han', 'Hezhen', 'Japanese', 'Kinh', 'Korean', 'Lahu', 'Miao', 'Naxi', \n",
+    "         'Oroqen', 'She', 'Thai', 'Tu', 'Tujia', 'Uygur', 'Xibo', 'Yi', 'Australian', 'Bougainville', 'Dusun', \n",
+    "         'Hawaiian', 'Igorot', 'Maori', 'Papuan', 'Balochi', 'Bengali', 'Brahmin', 'Brahui', 'Burusho', 'Hazara', \n",
+    "         'Irula', 'Kalash', 'Kapu', 'Khonda_Dora', 'Kusunda', 'Madiga', 'Makrani', 'Mala', 'Pathan', 'Punjabi', \n",
+    "         'Relli', 'Sindhi', 'Yadava', 'Abkhasian', 'Adygei', 'Albanian', 'Armenian', 'Basque', 'BedouinB', \n",
+    "         'Bergamo', 'Bulgarian', 'Chechen', 'Czech', 'Druze', 'English', 'Estonian', 'Finnish', 'French', \n",
+    "         'Georgian', 'Greek', 'Hungarian', 'Icelandic', 'Iranian', 'Iraqi_Jew', 'Jordanian', 'Lezgin', \n",
+    "         'North_Ossetian', 'Orcadian', 'Palestinian', 'Polish', 'Russian', 'Samaritan', 'Sardinian', 'Spanish', \n",
+    "         'Tajik', 'Turkish', 'Tuscan', 'Yemenite_Jew']\n",
+    "\n",
+    "len(mypopns)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['Abkhasian', 'Adygei', 'Albanian', 'Aleut', 'Altaian', 'Ami', 'Armenian', 'Atayal', 'Australian', 'Balochi', 'BantuHerero', 'BantuKenya', 'BantuTswana', 'Basque', 'BedouinB', 'Bengali', 'Bergamo', 'Biaka', 'Bougainville', 'Brahmin', 'Brahui', 'Bulgarian', 'Burmese', 'Burusho', 'Cambodian', 'Chane', 'Chechen', 'Chukchi', 'Czech', 'Dai', 'Daur', 'Dinka', 'Druze', 'Dusun', 'English', 'Esan', 'Eskimo_Chaplin', 'Eskimo_Naukan', 'Eskimo_Sireniki', 'Estonian', 'Even', 'Finnish', 'French', 'Gambian', 'Georgian', 'Greek', 'Han', 'Hawaiian', 'Hazara', 'Hezhen', 'Hungarian', 'Icelandic', 'Igorot', 'Iranian', 'Iraqi_Jew', 'Irula', 'Itelman', 'Japanese', 'Jordanian', 'Ju_hoan_North', 'Kalash', 'Kapu', 'Karitiana', 'Khomani_San', 'Khonda_Dora', 'Kinh', 'Korean', 'Kusunda', 'Kyrgyz', 'Lahu', 'Lezgin', 'Luhya', 'Luo', 'Madiga', 'Makrani', 'Mala', 'Mandenka', 'Mansi', 'Maori', 'Masai', 'Mayan', 'Mbuti', 'Mende', 'Miao', 'Mixe', 'Mixtec', 'Mongola', 'Mozabite', 'Naxi', 'North_Ossetian', 'Orcadian', 'Oroqen', 'Palestinian', 'Papuan', 'Pathan', 'Piapoco', 'Pima', 'Polish', 'Punjabi', 'Quechua', 'Relli', 'Russian', 'Saharawi', 'Samaritan', 'Sardinian', 'She', 'Sindhi', 'Somali', 'Spanish', 'Surui', 'Tajik', 'Thai', 'Tlingit', 'Tu', 'Tubalar', 'Tujia', 'Turkish', 'Tuscan', 'Ulchi', 'Uygur', 'Xibo', 'Yadava', 'Yakut', 'Yemenite_Jew', 'Yi', 'Yoruba', 'Zapotec']\n"
+     ]
+    }
+   ],
+   "source": [
+    "mypopns.sort()\n",
+    "print(mypopns)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "\n",
+    "3. Below is a code that has been adjusted from the <a href=#knowledgecheck3>'Sorting, indexing, and subselecting data' subsection</a>. Add one simple line of code below to remove negative liquid precip from df2 (from the \"Precip (mm)\" column), and work through understanding the rest of the code."
    ]
   },
   {
@@ -2110,7 +2084,6 @@
     "# we use groupby to group the data according to month. Then we tell pandas to take the mean of each group.\n",
     "month_aves = df2_dates.groupby(by=df2_dates.index.month).mean()\n",
     "month_aves\n",
-    "print(month_aves)\n",
     "\n",
     "# this is in average pcp in mm/hr\n",
     "pcp1 = month_aves['Precip (mm)']\n",
@@ -2120,9 +2093,10 @@
     "# per month for the month (Feb has 28 days, July has 31...but we'll do a rough average below)\n",
     "pcp2 = pcp1*24*30 \n",
     "\n",
-    "print(len(pcp2))\n",
-    "months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']\n",
-    "plt.bar(months, pcp1, color ='teal', \n",
+    "print(pcp2)\n",
+    "\n",
+    "months = ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D']\n",
+    "plt.bar(months, pcp2, color ='teal', \n",
     "        width = 0.4)\n",
     "plt.xlabel('Month')\n",
     "plt.ylabel('Precipitation (mm)')\n",
@@ -2140,9 +2114,9 @@
  ],
  "metadata": {
   "kernelspec": {
-   "display_name": "qgis",
+   "display_name": "Python 3 (ipykernel)",
    "language": "python",
-   "name": "qgis"
+   "name": "python3"
   },
   "language_info": {
    "codemirror_mode": {
@@ -2154,9 +2128,9 @@
    "name": "python",
    "nbconvert_exporter": "python",
    "pygments_lexer": "ipython3",
-   "version": "3.9.7"
+   "version": "3.9.13"
   }
  },
  "nbformat": 4,
- "nbformat_minor": 4
+ "nbformat_minor": 1
 }
